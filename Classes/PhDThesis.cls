@@ -1004,6 +1004,27 @@ wish to left align your text}
 
 
 
+% ******************************* Discussions **********************************
+\newenvironment{discussions}{
+\newpage
+\setsinglecolumn
+\chapter*{Discussions}
+\thispagestyle{empty}
+\centering
+}
+
+
+
+% ******************************* Conclusions **********************************
+\newenvironment{conclusions}{
+\newpage
+\setsinglecolumn
+\chapter*{Conclusions}
+\thispagestyle{empty}
+\centering
+}
+
+
 % ******************************* Nomenclature *********************************
 \RequirePackage[intoc]{nomencl}
 \makenomenclature
