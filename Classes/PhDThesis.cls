@@ -1005,6 +1005,7 @@ wish to left align your text}
 
 
 % ******************************* Discussions **********************************
+
 \newenvironment{discussions}{
 \newpage
 \setsinglecolumn
@@ -1016,6 +1017,7 @@ wish to left align your text}
 
 
 % ******************************* Conclusions **********************************
+
 \newenvironment{conclusions}{
 \newpage
 \setsinglecolumn
