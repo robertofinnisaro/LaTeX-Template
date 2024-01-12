@@ -1,0 +1,51 @@
+\documentclass[a4paper,openany,11pt,index,print,times,authoryear]{Classes/PhDThesis}
+\usepackage[utf8]{inputenc}
+%\usepackage[english]{babel}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[inkscapeformat=png]{svg}
+\usepackage{indentfirst}
+\usepackage{natbib}
+
+\input{Preamble/preamble}
+\input{thesis-info}
+
+\begin{document}
+
+\frontmatter
+
+\maketitle
+
+\include{Dedication/dedication}
+\include{Declaration/declaration}
+\include{Acknowledgement/acknowledgement}
+\include{Abstract/abstract}
+
+\tableofcontents
+\listoffigures
+\listoftables
+\printnomenclature
+
+\mainmatter
+
+\include{Chapter1/chapter1}
+\include{Chapter2/chapter2}
+
+% ********************************** Bibliography ******************************
+\begin{spacing}{0.9}
+\bibliographystyle{References/hull}
+\bibliography{References/references}
+%\printbibliography[heading=bibintoc, title={References}]
+\end{spacing}
+
+% ********************************** Appendices ********************************
+
+\begin{appendices}
+
+\include{Appendix1/appendix1}
+
+\end{appendices}
+
+% *************************************** Index ********************************
+\printthesisindex
+
+\end{document}
